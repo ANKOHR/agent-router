@@ -1,0 +1,11 @@
+{
+  "label": "SYNTHETIC STAND-IN: invented numbers, not measurements",
+  "profiles": [
+    {"name": "local-tiny", "cost": "0.0002", "quality": "0.62", "latency_ms": 120, "supports": ["classify", "summarize"]},
+    {"name": "local-small", "cost": "0.0010", "quality": "0.78", "latency_ms": 400, "supports": ["classify", "summarize", "qa"]},
+    {"name": "tool-codeexec", "cost": "0.0020", "quality": "0.88", "latency_ms": 700, "supports": ["code", "qa"]},
+    {"name": "tool-websearch", "cost": "0.0040", "quality": "0.85", "latency_ms": 1500, "supports": ["search", "qa"]},
+    {"name": "hosted-standard", "cost": "0.0120", "quality": "0.90", "latency_ms": 900, "supports": ["classify", "summarize", "qa", "search", "code"]},
+    {"name": "hosted-premium", "cost": "0.0600", "quality": "0.97", "latency_ms": 1800, "supports": ["classify", "summarize", "qa", "search", "code"]}
+  ]
+}

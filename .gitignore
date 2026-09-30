@@ -1,0 +1,10 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+art-prompt.txt
+art-launch.py
+art-codex.log
+*.log
+BUILD-DONE.txt
+demo/
