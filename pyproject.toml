@@ -15,5 +15,8 @@ art = "art.cli:main"
 [tool.setuptools.package-data]
 art = ["profiles.json"]
 
+[tool.setuptools]
+packages = ["art"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

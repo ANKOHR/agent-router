@@ -43,7 +43,7 @@ def route(task_type, quality_floor, profiles):
             reason = "equal cost and latency; later name"
         rejected.append({"profile": p.name, "reason": reason})
     return {"label": "SYNTHETIC STAND-IN", "task_type": task_type, "quality_floor": str(floor),
-            "chosen_profile": chosen.name, "estimated_cost_usd": f"{chosen.cost:.4f}",
+            "chosen_profile": chosen.name, "estimated_cost_usd": str(chosen.cost),
             "quality": str(chosen.quality), "latency_ms": chosen.latency_ms,
             "justification": "Cheapest supporting profile meeting the floor; ties use lower latency then name.",
             "rejected": rejected}
